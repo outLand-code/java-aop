@@ -9,11 +9,8 @@ import java.lang.instrument.Instrumentation;
 import java.security.ProtectionDomain;
 
 /**
- * <p>Title:MyClassFileTransformer</p>
  * <p>Description: 需要告诉JVM在启动main函数之前，需要先执行premain函数。首先需要将premain函数所在的类打成jar包。并修改该jar包里的META-INF\MANIFEST.MF 文件。 </p>
  *
- * @author tianxiao.liu
- * @date 2019-10-16 14:49
  */
 public class MyClassFileTransformer implements ClassFileTransformer {
 

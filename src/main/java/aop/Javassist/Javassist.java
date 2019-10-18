@@ -3,11 +3,7 @@ package aop.Javassist;
 import javassist.*;
 
 /**
- * <p>Title:Javassist</p>
- * <p>Description: TODO</p>
- *
- * @author tianxiao.liu
- * @date 2019-10-16 14:24
+
  */
 public class Javassist {
 

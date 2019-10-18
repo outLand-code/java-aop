@@ -1,16 +1,14 @@
 package aop.dynamic;
 
+import sun.misc.ProxyGenerator;
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.Arrays;
 
 /**
- * <p>Title:aop.dynamic.Dynamic</p>
- * <p>Description: TODO</p>
- *
- * @author tianxiao.liu
- * @date 2019-10-16 11:36
+
  */
 public class Dynamic {
 
@@ -19,7 +17,6 @@ public class Dynamic {
         DynamicInvocationHandler handler =new DynamicInvocationHandler(new Buessine());
         ClassLoader classLoader = ProxyDemo.class.getClassLoader();
         IBuessine2  proxyIBuessine=(IBuessine2) Proxy.newProxyInstance(classLoader,proxyInterface,handler);
-
         proxyIBuessine.doSomething2("myin");
         ((IBuessine) proxyIBuessine).doSomething();
 
